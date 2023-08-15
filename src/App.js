@@ -8,15 +8,10 @@ import Budget from './components/Budget';
 // Add code to import the other components here under
 import { AppProvider } from './context/AppContext';
 import ExpenseTotal from './components/ExpenseTotal';
+import Currency from './components/Currency';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
-
-// DIVISA
-
-
-
-
 
 const App = () => {
     return (
@@ -36,10 +31,15 @@ const App = () => {
                        
                         <ExpenseTotal />
                     </div>
-                    </div>
-                    <h3 className='mt-3'>Allocation</h3>
-                    <div className='row '>
                     <div className='col-sm'>
+                        
+                        <Currency />
+                    </div> 
+                    <div className='mt-3'>
+                    </div>
+                    <div className='col-sm'>
+
+                    <h3 className='mt-3'>Allocation</h3>
                       
                         <ExpenseList />
                     </div>
