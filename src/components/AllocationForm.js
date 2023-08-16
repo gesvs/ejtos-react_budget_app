@@ -4,6 +4,7 @@ import { AppContext } from '../context/AppContext';
 
 const AllocationForm = (props) => {
     const { dispatch,remaining, currency } = useContext(AppContext);
+    
 
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
